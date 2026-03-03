@@ -1,0 +1,53 @@
+{
+  // --- Core Editor Settings ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // --- UK English Guardrail (README & Comments) ---
+  "cSpell.language": "en-GB",
+  "cSpell.enabled": true,
+  "cSpell.ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "package-lock.json"
+  ],
+  "cSpell.words": ["BEM", "scss", "esbuild", "commitlint", "husky", "ruleset"],
+
+  // --- SCSS & CSS Configuration (BEM Focus) ---
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggest.insertMode": "replace"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "scss.lint.duplicateProperties": "error",
+  "scss.lint.idSelector": "warning", // Discourages IDs in BEM
+
+  // --- TypeScript Configuration (Strict Focus) ---
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // --- Files to Hide (Keep Sidebar Clean) ---
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.css.map": true, // Hides the maps we ignored in .gitignore
+    "scripts/*.js": {
+      "when": "$(basename).ts" // Hides compiled JS if the TS source exists
+    }
+  }
+}
