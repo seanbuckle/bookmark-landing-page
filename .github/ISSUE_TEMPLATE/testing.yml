@@ -1,0 +1,47 @@
+name: "🧪 Testing"
+description: "Add, fix, or improve unit, integration, or E2E tests."
+title: "[TEST]: <Short Description>"
+labels: ["test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to track improvements to the project's test suite and overall code quality.
+  - type: dropdown
+    id: test-type
+    attributes:
+      label: "🔍 Test Type"
+      description: "What kind of testing is being addressed?"
+      options:
+        - "Unit Testing"
+        - "Integration Testing"
+        - "End-to-End (E2E) Testing"
+        - "Performance / Load Testing"
+        - "Bug Regression Test"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "🎯 Test Scope"
+      description: "Which components, modules, or features are being tested?"
+      placeholder: "e.g., User Authentication flow, Database connection logic, or UI Navigation..."
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: "💡 Objective"
+      description: "What is the goal of adding or fixing these tests?"
+      placeholder: "e.g., Increase code coverage to 80% or prevent regression of Bug #123..."
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: "📋 Requirements"
+      options:
+        - label: "Tests follow existing project patterns."
+          required: false
+        - label: "Mocks/Stubs are used where appropriate."
+          required: false
+        - label: "Tests pass locally before submission."
+          required: false

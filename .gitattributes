@@ -1,0 +1,43 @@
+# 1. Global Settings
+# ------------------
+# Handle line endings automatically for all text files
+* text=auto eol=lf
+
+# 2. Code & Logic (Google Style: TS, JS, SCSS, HTML)
+# --------------------------------------------------
+# Ensure all code and style files use LF (Linux) line endings
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+
+# 3. Documentation (Google Doc Style: 80-char wrap)
+# -------------------------------------------------
+*.md text eol=lf
+LICENSE text eol=lf
+
+# 4. Configuration & CI/CD
+# ------------------------
+# Crucial for GitHub Actions to run correctly
+.github/workflows/*.yml text eol=lf
+.editorconfig text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+tsconfig.json text eol=lf
+
+# 5. Binary Files (DO NOT normalization)
+# --------------------------------------
+# Prevents Git from trying to "fix" line endings in images/fonts
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary

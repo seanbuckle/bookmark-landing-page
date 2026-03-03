@@ -1,0 +1,46 @@
+name: "🛡️ Security"
+description: "Internal tracking for security upgrades, dependency fixes, or audit chores."
+title: "[SECURITY]: <Short Description>"
+labels: ["security", "priority: high"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🛡️ Security Task Overview
+        Use this for internal security maintenance and tracking.
+        
+        > [!IMPORTANT]
+        > **External Visitors:** Please do NOT use this form to report new vulnerabilities. 
+        > Please use the **Security Tab** to submit a Private Advisory instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Description"
+      description: "Describe the internal security chore (e.g., Rotate API keys, Update Passport.js)."
+      placeholder: "e.g., Update dependency X to version Y to address CVE-XXXX..."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: "🔍 Reason / Source"
+      description: "e.g., Dependabot alert, code audit, or best practice update."
+      placeholder: "Dependabot Alert #12"
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "📋 Implementation Checklist"
+      options:
+        - label: "Research the vulnerability or update requirements."
+          required: false
+        - label: "Implement the fix/upgrade in a development branch."
+          required: false
+        - label: "Verify the fix with tests."
+          required: false
+        - label: "Merge and verify in production."
+          required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: "📓 Internal Notes"
+      description: "Any sensitive context that isn't a secret (never post actual keys here!)."

@@ -1,0 +1,45 @@
+name: "🛠️ Maintenance / Refactor"
+description: "Clean up code, update configurations, or refactor logic."
+title: "[CHORE]: <Short Description>"
+labels: ["refactor", "chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for internal improvements that don't change the end-user's experience but keep the engine running smoothly.
+  - type: dropdown
+    id: category
+    attributes:
+      label: "🧹 Maintenance Category"
+      description: "What kind of cleanup is this?"
+      options:
+        - "Code Refactoring (No logic change)"
+        - "Dependency Updates"
+        - "Configuration / CI/CD Changes"
+        - "Performance Optimization"
+        - "Technical Debt"
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: "💡 Reason for Change"
+      description: "Why does this code need cleaning or updating? What is the current pain point?"
+      placeholder: "e.g., The current auth logic is deeply nested and hard to test..."
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "🏗️ Implementation Plan"
+      description: "Briefly describe how you plan to refactor this."
+      placeholder: "e.g., Moving logic into a separate service file..."
+  - type: checkboxes
+    id: risk
+    attributes:
+      label: "⚠️ Risk Assessment"
+      options:
+        - label: "This change has a high risk of breaking existing functionality."
+          required: false
+        - label: "I have verified that tests cover this area."
+          required: false

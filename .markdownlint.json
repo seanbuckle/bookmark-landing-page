@@ -1,0 +1,10 @@
+{
+  "default": true,
+  "MD013": { "line_length": 80 },
+  "MD007": { "indent": 2 },
+  "MD049": { "style": "underscore" },
+  "MD050": { "style": "asterisk" },
+  "MD003": { "style": "atx" },
+  "MD033": false,
+  "MD041": true
+}

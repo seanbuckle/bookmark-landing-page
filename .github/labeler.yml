@@ -1,0 +1,32 @@
+feat:
+    - head-branch: ["^feat/.*"]
+fix:
+    - head-branch: ["^fix/.*"]
+refactor:
+    - head-branch: ["^refactor/.*"]
+chore:
+    - head-branch: ["^chore/.*", "^dependabot/.*"]
+test:
+    - head-branch: ["^test/.*"]
+
+docs:
+    - head-branch: ["^docs/.*"]
+    - changed-files:
+          - any-glob-to-any-file: ["README.md", "docs/**", "LICENSE"]
+
+security:
+    - head-branch: ["^security/.*", "^patch/.*"]
+    - changed-files:
+          - any-glob-to-any-file: [".github/workflows/**", "auth/**"]
+
+"priority: high":
+    - head-branch: ["^hotfix/.*", ".*-urgent$"]
+
+breaking-change:
+    - head-branch: ["^break/.*", ".*-major$"]
+
+in-progress:
+    - head-branch: ["^wip/.*"]
+
+on-hold:
+    - head-branch: ["^hold/.*", "^draft/.*"] 

@@ -1,0 +1,23 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+max_line_length = 80
+
+# Added scss, sass, and gss to the code-specific block
+[*.{html,css,scss,sass,gss,js,jsx,ts,tsx,json,vue,svelte}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+max_line_length = 80
+trim_trailing_whitespace = false
+
+[COMMIT_EDITMSG]
+charset = utf-8

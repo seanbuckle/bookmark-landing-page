@@ -1,0 +1,42 @@
+name: "📚 Documentation"
+description: "Suggest improvements to READMEs, guides, or code comments."
+title: "[DOCS]: <Short Description>"
+labels: ["docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good documentation is the backbone of a great project. Thank you for helping improve it!
+  - type: dropdown
+    id: scope
+    attributes:
+      label: "📍 Scope of Change"
+      description: "What part of the documentation needs attention?"
+      options:
+        - "README / Getting Started"
+        - "API / Technical Specifications"
+        - "In-code Comments / Docstrings"
+        - "Contributing Guidelines"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "✍️ Description of Changes"
+      description: "Describe what needs to be written, corrected, or updated."
+      placeholder: "e.g., The installation steps are outdated since the last update..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "🔗 Additional Context"
+      description: "Link to the specific file or add screenshots if helpful."
+  - type: checkboxes
+    id: quality-check
+    attributes:
+      label: "🚦 Final Check"
+      options:
+        - label: "I am willing to submit a PR to fix this myself."
+          required: false

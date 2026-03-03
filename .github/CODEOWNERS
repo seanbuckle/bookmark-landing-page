@@ -1,0 +1,13 @@
+# Global owners (Fallback)
+
+* @your-github-username
+
+## Frontend Specialists
+
+*.tsx   @your-github-username
+*.scss  @your-github-username
+
+## Backend/Infra Specialists
+
+/src/api/ @your-github-username
+.github/workflows/ @your-github-username

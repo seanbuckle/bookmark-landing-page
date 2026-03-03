@@ -1,0 +1,9 @@
+# Disable the "Open a blank issue" button to force use of templates
+blank_issues_enabled: false
+
+# Optional: Add external support links (e.g., Discord, StackOverflow)
+contact_links:
+  - name: "💬 Discussions"
+    url: "https://github.com/YOUR_USERNAME/YOUR_REPO/discussions"
+    about: "Ask questions and chat with the community here."
+
