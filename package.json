@@ -10,7 +10,8 @@
     "watch:sass": "sass --watch styles:styles",
     "watch:ts": "tsc --watch",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": ""
   },
   "lint-staged": {
     "*.{html,scss,ts,json,md}": [
