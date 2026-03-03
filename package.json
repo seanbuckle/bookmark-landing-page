@@ -1,7 +1,32 @@
 {
+  "name": "fm-bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Bookmark landing page using BEM and UK English",
+  "scripts": {
+    "build": "npm-run-all build:sass build:ts",
+    "build:sass": "sass styles/main.scss styles/main.min.css --style=compressed --no-source-map",
+    "build:ts": "tsc && esbuild scripts/scripts.js --bundle --minify --outfile=scripts/scripts.min.js",
+    "dev": "npm-run-all --parallel watch:sass watch:ts",
+    "watch:sass": "sass --watch styles:styles",
+    "watch:ts": "tsc --watch",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "test": ""
+  },
+  "lint-staged": {
+    "*.{html,scss,ts,json,md}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
-    "husky": "^9.1.7"
+    "esbuild": "^0.27.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.8.1",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3"
   }
 }
