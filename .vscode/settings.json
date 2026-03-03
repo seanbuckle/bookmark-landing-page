@@ -16,7 +16,7 @@
   ],
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
     {
-      "text": "Using '.github/PULL_REQUEST_TEMPLATE.md' as a skeleton, populate the Testing and Description sections with specifics from the diff. Ensure all generated text uses UK English and an 80-character wrap."
+      "text": "Using '.github/pull_request_template.md' as the skeleton, fill in the 'Description' and 'Testing' sections by analysing the diff. Mark exactly one primary category checkbox and confirm style alignment using UK English spelling."
     },
     {
       "text": "PR titles must use 'type(scope):' (colon). Branch names use 'type/description' (slash). Maintain UK English, BEM (hyphen-case) for CSS, and camelCase for TS."
