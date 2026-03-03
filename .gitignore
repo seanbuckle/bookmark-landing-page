@@ -5,6 +5,8 @@ node_modules
 dist/
 build/
 lib/
+*.css.map
+*.js.map
 tsbuildinfo
 
 # Environment variables (Crucial for Security!)
@@ -24,6 +26,10 @@ yarn-error.log*
 Thumbs.db
 
 # IDE settings
-.vscode/
+# IDE settings - Ignore the folder, but force-include the team configs
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
 .idea/
 
