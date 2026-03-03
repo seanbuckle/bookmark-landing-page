@@ -1,7 +1,7 @@
 {
-  "name": "fm-bookmark-landing-page",
+  "name": "bookmark-landing-page",
   "version": "1.0.0",
-  "description": "Frontend Mentor - Bookmark landing page using BEM and UK English",
+  "description": "Bookmark landing page project with responsive design and interactive features. Built using HTML, SCSS, and TypeScript, this project demonstrates modern web development practices and tools.",
   "scripts": {
     "build": "npm-run-all build:sass build:ts",
     "build:sass": "sass styles/main.scss styles/main.min.css --style=compressed --no-source-map",
@@ -19,11 +19,11 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.4.2",
-    "@commitlint/config-conventional": "^20.4.2",
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
     "esbuild": "^0.27.3",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.1",
+    "lint-staged": "^16.3.2",
     "npm-run-all": "^4.1.5",
     "prettier": "3.8.1",
     "sass": "^1.97.3",
