@@ -16,7 +16,7 @@
   ],
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
     {
-      "text": "Use '.github/pull_request_template.md' as the absolute structural reference. Fill checkboxes [x] based on changes, use UK English, and maintain an 80-character line wrap."
+      "text": "Using '.github/PULL_REQUEST_TEMPLATE.md' as a skeleton, populate the Testing and Description sections with specifics from the diff. Ensure all generated text uses UK English and an 80-character wrap."
     },
     {
       "text": "PR titles must use 'type(scope):' (colon). Branch names use 'type/description' (slash). Maintain UK English, BEM (hyphen-case) for CSS, and camelCase for TS."
@@ -24,7 +24,7 @@
     {
       "text": "Only use these 14 labels: automated, breaking-change, chore, dependencies, docs, feat, fix, github-actions, in-progress, on-hold, priority: high, refactor, security, test."
     },
-    
+
   ],
 
   // --- UK English Spellcheck ---
