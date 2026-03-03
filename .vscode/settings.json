@@ -8,46 +8,44 @@
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // --- UK English Guardrail (README & Comments) ---
+  // --- 1. Guardrail for the 'Generate Commit' Button ---
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Follow Conventional Commits: 'type(scope): description'. NEVER use the 'add:' prefix. Use imperative mood and UK English."
+    }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "text": "Using '.github/pull_request_template.md' as the skeleton, fill in the 'Description' and 'Testing' sections by analysing the diff. Mark exactly one primary category checkbox and confirm style alignment using UK English spelling."
+    },
+    {
+      "text": "PR titles must use 'type(scope):' (colon). Branch names use 'type/description' (slash). Maintain UK English, BEM (hyphen-case) for CSS, and camelCase for TS."
+    },
+    {
+      "text": "Only use these 14 labels: automated, breaking-change, chore, dependencies, docs, feat, fix, github-actions, in-progress, on-hold, priority: high, refactor, security, test."
+    },
+
+  ],
+
+  // --- UK English Spellcheck ---
   "cSpell.language": "en-GB",
   "cSpell.enabled": true,
-  "cSpell.ignorePaths": [
-    "node_modules/**",
-    "dist/**",
-    "package-lock.json"
-  ],
+  "cSpell.ignorePaths": ["node_modules/**", "dist/**", "*.min.js"],
   "cSpell.words": ["BEM", "scss", "esbuild", "commitlint", "husky", "ruleset"],
 
-  // --- SCSS & CSS Configuration (BEM Focus) ---
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggest.insertMode": "replace"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "scss.lint.duplicateProperties": "error",
-  "scss.lint.idSelector": "warning", // Discourages IDs in BEM
+  // --- SCSS & CSS (BEM Focus) ---
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "scss.lint.idSelector": "warning",
 
-  // --- TypeScript Configuration (Strict Focus) ---
+  // --- TypeScript (Strict Focus) ---
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "explicit"
-    }
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" }
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
 
-  // --- Files to Hide (Keep Sidebar Clean) ---
+  // --- Files to Hide ---
   "files.exclude": {
     "**/.git": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/*.css.map": true, // Hides the maps we ignored in .gitignore
-    "scripts/*.js": {
-      "when": "$(basename).ts" // Hides compiled JS if the TS source exists
-    }
+    "**/*.css.map": true,
+    "scripts/*.js": { "when": "$(basename).ts" }
   }
 }

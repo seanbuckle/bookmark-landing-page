@@ -1,42 +1,38 @@
-# Pull Request
+# 🚀 Pull Request
 
 ## 📝 Description
 
-**Type of Change:**
+**Primary Category:**
 
-- [ ] 🚀 New Feature `[FEAT]`
-- [ ] 🐛 Bug Fix `[FIX]`
-- [ ] 📚 Documentation `[DOCS]`
-- [ ] 🛠️ Maintenance / Refactor `[CHORE]`
-- [ ] 🧪 Testing `[TEST]`
-- [ ] 🛡️ Security `[SECURITY]`
+- [ ] `feat` | `fix` | `docs` | `chore` | `refactor` | `test`
+- [ ] `security` | `github-actions` | `dependencies` | `breaking-change`
+- [ ] `priority: high` | `in-progress` | `on-hold` | `automated`
 
 ---
 
 ## 🧪 Testing & Quality
 
-- [ ] **Unit Tests:** (e.g., Added tests for the Auth controller)
-- [ ] **Manual Verification:** (e.g., Verified the login flow on Chrome/Firefox)
-- [ ] **Styling:** (e.g., Verified SCSS nesting follows the 3-level rule)
+- [ ] **Technical Validation:** (e.g. Logic flow, API response, or Unit Tests)
+- [ ] **Manual Verification:** (e.g. Browser/Device testing)
+- [ ] **Visual/UI:** (e.g. BEM structure, accessibility, or 3-level SCSS nesting)
 
 ---
 
-## 📏 Google Style Alignment
+## 📏 Google Style & Standards
 
-- [ ] **Indentation:** Used 2-space indentation throughout.
-- [ ] **Naming:** Followed `hyphen-case` for CSS/SCSS and `camelCase` for TS.
-- [ ] **Docs:** Any Markdown changes follow the 80-character line limit.
-
----
-
-## 🖼️ Screenshots / Logs (If applicable)
+- [ ] **Code Style:** 2-space indentation and 80-character line wrap.
+- [ ] **Naming:** `hyphen-case` (CSS/SCSS) and `camelCase` (TS/JS).
+- [ ] **Language:** Strictly **UK English** (e.g., *initialise*, *colour*).
 
 ---
 
-## 🚦 Checklist
+## 📸 Evidence (If applicable)
+
+---
+
+## 🚦 Final Checklist
 
 - [ ] My code follows the project's style guidelines.
 - [ ] I have performed a self-review of my own code.
-- [ ] I have commented my code, particularly in hard-to-understand areas.
-- [ ] I have made corresponding changes to the documentation.
-- [ ] My changes generate no new warnings.
+- [ ] All new/modified prose follows the 80-character wrap rule.
+- [ ] My changes generate no new linting or build warnings.
