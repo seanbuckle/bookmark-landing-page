@@ -1,44 +1,38 @@
-# Pull Request
+# 🚀 Pull Request
 
 ## 📝 Description
 
-**Type of Change:**
+**Primary Category:**
 
-- [ ] 🚀 New Feature `[FEAT]`
-- [ ] 🐛 Bug Fix `[FIX]`
-- [ ] 📚 Documentation `[DOCS]`
-- [ ] 🛠️ Maintenance / Refactor `[CHORE]` / `[REFACTOR]`
-- [ ] 🧪 Testing `[TEST]`
-- [ ] 🛡️ Security `[SECURITY]`
-- [ ] 🤖 Automation / CI `[AUTOMATED]` / `[GITHUB-ACTIONS]`
-- [ ] 📦 Dependencies `[DEPENDENCIES]`
-- [ ] ⚠️ Breaking Change `[BREAKING-CHANGE]`
-- [ ] 🚨 High Priority `[PRIORITY: HIGH]`
+- [ ] `feat` | `fix` | `docs` | `chore` | `refactor` | `test`
+- [ ] `security` | `github-actions` | `dependencies` | `breaking-change`
+- [ ] `priority: high` | `in-progress` | `on-hold` | `automated`
 
 ---
 
-## 🧪 Testing & quality
+## 🧪 Testing & Quality
 
-- [ ] **Technical Validation:**
-- [ ] **Manual Verification:**
-- [ ] **Styling / UI:**
-
-## 📏 Google Style Alignment
-
-- [ ] **Indentation:** Used 2-space indentation throughout.
-- [ ] **Naming:** Followed `hyphen-case` for CSS/SCSS and `camelCase` for TS.
-- [ ] **Docs/Spelling:** Markdown follows 80-character limit and UK English.
+- [ ] **Technical Validation:** (e.g. Logic flow, API response, or Unit Tests)
+- [ ] **Manual Verification:** (e.g. Browser/Device testing)
+- [ ] **Visual/UI:** (e.g. BEM structure, accessibility, or 3-level SCSS nesting)
 
 ---
 
-## 🖼️ Screenshots / Logs (If applicable)
+## 📏 Google Style & Standards
+
+- [ ] **Code Style:** 2-space indentation and 80-character line wrap.
+- [ ] **Naming:** `hyphen-case` (CSS/SCSS) and `camelCase` (TS/JS).
+- [ ] **Language:** Strictly **UK English** (e.g., *initialise*, *colour*).
 
 ---
 
-## 🚦 Checklist
+## 📸 Evidence (If applicable)
+
+---
+
+## 🚦 Final Checklist
 
 - [ ] My code follows the project's style guidelines.
 - [ ] I have performed a self-review of my own code.
-- [ ] I have commented my code in complex areas.
-- [ ] I have made corresponding changes to the documentation.
-- [ ] My changes generate no new warnings.
+- [ ] All new/modified prose follows the 80-character wrap rule.
+- [ ] My changes generate no new linting or build warnings.
