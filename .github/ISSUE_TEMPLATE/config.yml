@@ -4,6 +4,6 @@ blank_issues_enabled: false
 # Optional: Add external support links (e.g., Discord, StackOverflow)
 contact_links:
   - name: "💬 Discussions"
-    url: "https://github.com/YOUR_USERNAME/YOUR_REPO/discussions"
+    url: "https://github.com/seanbuckle/bookmark-landing-page/discussions"
     about: "Ask questions and chat with the community here."
 

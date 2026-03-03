@@ -7,7 +7,7 @@
 To keep this project and its users safe, please report any suspected
 vulnerabilities privately. You can do this via **GitHub Security Advisories**:
 
-[👉 Report a vulnerability here](https://github.com/{{REPOSITORY_OWNER}}/{{REPOSITORY_NAME}}/security/advisories/new)
+[👉 Report a vulnerability here](https://github.com/seanbuckle/bookmark-landing-page/security/advisories/new)
 
 _Note:_ When you create a new repository from this template, please
 update the link above to point to your new repository's security tab.
