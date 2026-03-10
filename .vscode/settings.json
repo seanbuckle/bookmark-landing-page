@@ -11,7 +11,7 @@
   // --- 1. Guardrail for the 'Generate Commit' Button ---
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "text": "Follow Conventional Commits: 'type(scope): description'. NEVER use the 'add:' prefix. Use imperative mood and UK English."
+      "text": "Follow Conventional Commits: 'type: description'. NEVER use the 'add:' prefix. Use imperative mood and UK English."
     }
   ],
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
@@ -19,7 +19,7 @@
       "text": "Using '.github/pull_request_template.md' as the skeleton, fill in the 'Description' and 'Testing' sections by analysing the diff. Mark exactly one primary category checkbox and confirm style alignment using UK English spelling."
     },
     {
-      "text": "PR titles must use 'type(scope):' (colon). Branch names use 'type/description' (slash). Maintain UK English, BEM (hyphen-case) for CSS, and camelCase for TS."
+      "text": "PR titles must use 'type: description' (colon). Branch names use 'type/description' (slash). Maintain UK English, BEM (hyphen-case) for CSS, and camelCase for TS."
     },
     {
       "text": "Only use these 14 labels: automated, breaking-change, chore, dependencies, docs, feat, fix, github-actions, in-progress, on-hold, priority: high, refactor, security, test."
