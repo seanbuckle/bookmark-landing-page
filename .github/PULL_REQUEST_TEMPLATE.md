@@ -1,38 +1,34 @@
-# 🚀 Pull Request
+# Pull Request
 
-## 📝 Description
+## Context
 
-**Primary Category:**
+Gives the reviewer some context about the work and why this change is being
+made, the WHY you are doing this. This field goes more into the product
+perspective.
 
-- [ ] `feat` | `fix` | `docs` | `chore` | `refactor` | `test`
-- [ ] `security` | `github-actions` | `dependencies` | `breaking-change`
-- [ ] `priority: high` | `in-progress` | `on-hold` | `automated`
+## Description
 
----
+Provide a detailed description of how exactly this task will be accomplished.
+This can be something technical. What specific steps will be taken to achieve
+the goal? This should include details on service integration, job logic,
+implementation, etc.
 
-## 🧪 Testing & Quality
+## Changes in the codebase
 
-- [ ] **Technical Validation:** (e.g. Logic flow, API response, or Unit Tests)
-- [ ] **Manual Verification:** (e.g. Browser/Device testing)
-- [ ] **Visual/UI:** (e.g. BEM structure, accessibility, or 3-level SCSS nesting)
+This is where becomes technical. Here is where you can be more focused on
+the engineering side of your solution. Include information about the
+functionality they are adding or modifying, as well as any refactoring or
+improvement of existing code.
 
----
+## Changes outside the codebase
 
-## 📏 Google Style & Standards
+If you have made changes to external services, need to add additional values to
+the job settings, or need to add something new to the database, explain it here.
+This may include updates to third-party services, changes to infrastructure
+configuration, integration with external APIs, etc.
 
-- [ ] **Code Style:** 2-space indentation and 80-character line wrap.
-- [ ] **Naming:** `hyphen-case` (CSS/SCSS) and `camelCase` (TS/JS).
-- [ ] **Language:** Strictly **UK English** (e.g., *initialise*, *colour*).
+## Additional information
 
----
-
-## 📸 Evidence (If applicable)
-
----
-
-## 🚦 Final Checklist
-
-- [ ] My code follows the project's style guidelines.
-- [ ] I have performed a self-review of my own code.
-- [ ] All new/modified prose follows the 80-character wrap rule.
-- [ ] My changes generate no new linting or build warnings.
+Provide any additional information that might be useful to the reviewer in
+evaluating this pull request. This could include performance considerations,
+design choices, etc.

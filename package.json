@@ -8,7 +8,7 @@
     "build:ts": "tsc && esbuild scripts/scripts.js --bundle --minify --outfile=scripts/scripts.min.js",
     "dev": "npm-run-all --parallel watch:sass watch:sass-min watch:ts",
     "watch:sass": "sass --watch styles:styles",
-    "watch:sass-min": "sass --watch styles:styles --style=compressed --no-source-map",
+    "watch:sass-min": "sass --watch styles/main.scss styles/main.min.css --style=compressed",
     "watch:ts": "tsc --watch",
     "format": "prettier --write .",
     "prepare": "husky",

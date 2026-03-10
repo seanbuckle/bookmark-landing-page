@@ -1,5 +1,8 @@
 :root {
   color-scheme: light dark;
+
+  // primary colors
+
   --clr-primary: light-dark(
     oklch(0.496 0.3084 277.87),
     oklch(0.8329 0.0962 287.24)
@@ -21,6 +24,9 @@
     oklch(0.8329 0.0962 287.24),
     oklch(0.496 0.3084 277.87)
   );
+
+  // secondary colors
+
   --clr-secondary: light-dark(
     oklch(0.4691 0.1823 141.1632),
     oklch(0.8073 0.3046 139.85)
@@ -38,6 +44,9 @@
   --clr-on-secondary-fixed: oklch(0.2158 0.0841 141.31);
   --clr-secondary-fixed-dim: oklch(0.8073 0.3046 139.85);
   --clr-on-secondary-fixed-variant: oklch(0.3856 0.1496 141.1133);
+
+  // tertiary colors
+
   --clr-tertiary: light-dark(
     oklch(0.5129 0.2744 310.18),
     oklch(0.84 0.1299 315.4)
@@ -55,6 +64,9 @@
   --clr-on-tertiary-fixed: oklch(0.2414 0.1291 310.13);
   --clr-tertiary-fixed-dim: oklch(0.84 0.1299 315.4);
   --clr-on-tertiary-fixed-variant: oklch(0.4267 0.2286 309.74);
+
+  // error colors
+
   --clr-error: light-dark(
     oklch(0.5058 0.2301 22.85),
     oklch(0.8378 0.1155 21.67)
@@ -72,6 +84,9 @@
   --clr-on-error-fixed: oklch(0.2367 0.1077 23.4);
   --clr-error-fixed-dim: oklch(0.8378 0.1155 21.67);
   --clr-on-error-fixed-variant: oklch(0.4185 0.1904 22.92);
+
+  // surface colors
+
   --clr-surface: light-dark(
     oklch(0.9842 0.0101 311.18),
     oklch(0.1891 0.0101 285.4)
@@ -120,6 +135,9 @@
     oklch(0.9575 0.0114 308.33),
     oklch(0.3126 0.0107 293.42)
   );
+
+  // outline colors
+
   --clr-outline: light-dark(
     oklch(0.5699 0.0109 299.08),
     oklch(0.6551 0.0122 303.01)
@@ -128,13 +146,9 @@
     oklch(0.8282 0.0115 303.08),
     oklch(0.3973 0.01 293.59)
   );
+
+  // scrim and shadow colors
+
   --clr-scrim: oklch(0 0 0 / 0.32);
   --clr-shadow: light-dark();
 }
-
-html,
-body {
-  background-color: var(--clr-surface);
-}
-
-/*# sourceMappingURL=main.css.map */
