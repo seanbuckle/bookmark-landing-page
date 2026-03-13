@@ -137,14 +137,14 @@
   font-display: swap;
   font-weight: 100 900;
   font-style: normal;
-  src: url("/styles/fonts/rubik.woff2") format("woff2-variations");
+  src: url("/styles/fonts/rubik.woff2") format("woff2");
 }
 @font-face {
   font-family: "Rubik";
   font-display: swap;
   font-style: italic;
   font-weight: 100 900;
-  src: url("/styles/fonts/rubik-italic.woff2") format("woff2-variations");
+  src: url("/styles/fonts/rubik-italic.woff2") format("woff2");
 }
 :root {
   --font-family: 'Rubik', sans-serif;
