@@ -1,8 +1,9 @@
-@use 'reset';
 @use 'colors';
 @use 'typography';
+@use 'reset';
 
 html,
 body {
+  scroll-behavior: smooth;
   background-color: var(--clr-surface);
 }
