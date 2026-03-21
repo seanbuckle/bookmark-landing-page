@@ -76,6 +76,7 @@ select {
 button,
 [role='button'] {
   cursor: pointer;
+  border: none;
 }
 
 button:disabled,
