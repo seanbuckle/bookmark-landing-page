@@ -9,7 +9,9 @@
     "dev": "npm-run-all --parallel watch:sass watch:sass-min watch:ts",
     "watch:sass": "sass --watch styles:styles",
     "watch:sass-min": "sass --watch styles/main.scss styles/main.min.css --style=compressed",
-    "watch:ts": "tsc --watch",
+    "watch:ts": "npm-run-all --parallel watch:tsc watch:esbuild",
+    "watch:tsc": "tsc --watch",
+    "watch:esbuild": "esbuild scripts/scripts.js --bundle --minify --outfile=scripts/scripts.min.js --watch",
     "format": "prettier --write .",
     "prepare": "husky",
     "test": ""
