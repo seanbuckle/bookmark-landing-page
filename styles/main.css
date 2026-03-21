@@ -1,132 +1,151 @@
+@property --clr-surface-container {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(90% 0.2497 281.22deg);
+}
 :root {
   color-scheme: light dark;
+  --clr-primary-base: oklch(0.5093 0.2497 281.22);
   --clr-primary: light-dark(
-    oklch(0.496 0.3084 277.87),
-    oklch(0.8329 0.0962 287.24)
+    var(--clr-primary-base),
+    oklch(from var(--clr-primary-base) 0.8 c h)
   );
-  --clr-on-primary: light-dark(oklch(1 0 0), oklch(0.3376 0.2186 272.08));
+  --clr-on-primary: light-dark(
+    oklch(from var(--clr-primary-base) 1 c h),
+    oklch(from var(--clr-primary-base) 0.2 c h)
+  );
   --clr-primary-container: light-dark(
-    oklch(0.9166 0.048 291.25),
-    oklch(0.4262 0.2734 273.39)
+    oklch(from var(--clr-primary-base) 0.9 c h),
+    oklch(from var(--clr-primary-base) 0.3 c h)
   );
   --clr-on-primary-container: light-dark(
-    oklch(0.2429 0.1574 272),
-    oklch(0.9166 0.048 291.25)
+    oklch(from var(--clr-primary-base) 0.3 c h),
+    oklch(from var(--clr-primary-base) 0.9 c h)
   );
-  --clr-primary-fixed: oklch(0.9166 0.048 291.25);
-  --clr-on-primary-fixed: oklch(0.2429 0.1574 272);
-  --clr-primary-fixed-dim: oklch(0.8329 0.0962 287.24);
-  --clr-on-primary-fixed-variant: oklch(0.4262 0.2734 273.39);
+  --clr-primary-fixed: oklch(from var(--clr-primary-base) 0.9 c h);
+  --clr-on-primary-fixed: oklch(from var(--clr-primary-base) 0.1 c h);
+  --clr-primary-fixed-dim: oklch(from var(--clr-primary-base) 0.8 c h);
+  --clr-on-primary-fixed-variant: oklch(from var(--clr-primary-base) 0.3 c h);
   --clr-inverse-primary: light-dark(
-    oklch(0.8329 0.0962 287.24),
-    oklch(0.496 0.3084 277.87)
+    oklch(from var(--clr-primary-base) 0.8 c h),
+    oklch(from var(--clr-primary-base) 0.4 c h)
   );
+  --clr-secondary-base: oklch(0.4692 0.1435 141.6);
   --clr-secondary: light-dark(
-    oklch(0.4691 0.1823 141.1632),
-    oklch(0.8073 0.3046 139.85)
+    var(--clr-secondary-base),
+    oklch(from var(--clr-secondary-base) 0.8 c h)
   );
-  --clr-on-secondary: light-dark(oklch(1 0 0), oklch(0.3003 0.1167 141.1737));
+  --clr-on-secondary: light-dark(
+    oklch(1 0 0),
+    oklch(from var(--clr-secondary-base) 0.2 c h)
+  );
   --clr-secondary-container: light-dark(
-    oklch(0.8945 0.2572 139.54),
-    oklch(0.3856 0.1496 141.1133)
+    oklch(from var(--clr-secondary-base) 0.9 c h),
+    oklch(from var(--clr-secondary-base) 0.3 c h)
   );
   --clr-on-secondary-container: light-dark(
-    oklch(0.2158 0.0841 141.31),
-    oklch(0.8945 0.2572 139.54)
+    oklch(from var(--clr-secondary-base) 0.3 c h),
+    oklch(from var(--clr-secondary-base) 0.9 c h)
   );
-  --clr-secondary-fixed: oklch(0.8945 0.2572 139.54);
-  --clr-on-secondary-fixed: oklch(0.2158 0.0841 141.31);
-  --clr-secondary-fixed-dim: oklch(0.8073 0.3046 139.85);
-  --clr-on-secondary-fixed-variant: oklch(0.3856 0.1496 141.1133);
+  --clr-secondary-fixed: oklch(from var(--clr-secondary-base) 0.9 c h);
+  --clr-on-secondary-fixed: oklch(from var(--clr-secondary-base) 0.1 c h);
+  --clr-secondary-fixed-dim: oklch(from var(--clr-secondary-base) 0.8 c h);
+  --clr-on-secondary-fixed-variant: oklch(
+    from var(--clr-secondary-base) 0.3 c h
+  );
+  --clr-tertiary-base: oklch(0.4 0.3208 310.18);
   --clr-tertiary: light-dark(
-    oklch(0.5129 0.2744 310.18),
-    oklch(0.84 0.1299 315.4)
+    var(--clr-tertiary-base),
+    oklch(from var(--clr-tertiary-base) 0.8 c h)
   );
-  --clr-on-tertiary: light-dark(oklch(1 0 0), oklch(0.3336 0.1788 309.63));
+  --clr-on-tertiary: light-dark(
+    oklch(1 0 0),
+    oklch(from var(--clr-tertiary-base) 0.2 c h)
+  );
   --clr-tertiary-container: light-dark(
-    oklch(0.9207 0.0661 318.14),
-    oklch(0.4267 0.2286 309.74)
+    oklch(from var(--clr-tertiary-base) 0.9 c h),
+    oklch(from var(--clr-tertiary-base) 0.3 c h)
   );
   --clr-on-tertiary-container: light-dark(
-    oklch(0.2414 0.1291 310.13),
-    oklch(0.9207 0.0661 318.14)
+    oklch(from var(--clr-tertiary-base) 0.3 c h),
+    oklch(from var(--clr-tertiary-base) 0.9 c h)
   );
-  --clr-tertiary-fixed: oklch(0.9207 0.0661 318.14);
-  --clr-on-tertiary-fixed: oklch(0.2414 0.1291 310.13);
-  --clr-tertiary-fixed-dim: oklch(0.84 0.1299 315.4);
-  --clr-on-tertiary-fixed-variant: oklch(0.4267 0.2286 309.74);
+  --clr-tertiary-fixed: oklch(from var(--clr-tertiary-base) 0.9 c h);
+  --clr-on-tertiary-fixed: oklch(from var(--clr-tertiary-base) 0.1 c h);
+  --clr-tertiary-fixed-dim: oklch(from var(--clr-tertiary-base) 0.8 c h);
+  --clr-on-tertiary-fixed-variant: oklch(from var(--clr-tertiary-base) 0.3 c h);
+  --clr-error-base: oklch(0.4 0.2964 22.85);
   --clr-error: light-dark(
-    oklch(0.5058 0.2301 22.85),
-    oklch(0.8378 0.1155 21.67)
+    var(--clr-error-base),
+    oklch(from var(--clr-error-base) 0.8 c h)
   );
-  --clr-on-error: light-dark(oklch(1 0 0), oklch(0.3264 0.1485 22.94));
+  --clr-on-error: light-dark(
+    oklch(1 0 0),
+    oklch(from var(--clr-error-base) 0.2 c h)
+  );
   --clr-error-container: light-dark(
-    oklch(0.9188 0.0539 21.601),
-    oklch(0.4185 0.1904 22.92)
+    oklch(from var(--clr-error-base) 0.9 c h),
+    oklch(from var(--clr-error-base) 0.3 c h)
   );
   --clr-on-error-container: light-dark(
-    oklch(0.2367 0.1077 23.4),
-    oklch(0.9188 0.0539 21.601)
+    oklch(from var(--clr-error-base) 0.3 c h),
+    oklch(from var(--clr-error-base) 0.9 c h)
   );
-  --clr-error-fixed: oklch(0.9188 0.0539 21.601);
-  --clr-on-error-fixed: oklch(0.2367 0.1077 23.4);
-  --clr-error-fixed-dim: oklch(0.8378 0.1155 21.67);
-  --clr-on-error-fixed-variant: oklch(0.4185 0.1904 22.92);
+  --clr-error-fixed: oklch(from var(--clr-error-base) 0.9 c h);
+  --clr-on-error-fixed: oklch(from var(--clr-error-base) 0.1 c h);
+  --clr-error-fixed-dim: oklch(from var(--clr-error-base) 0.8 c h);
+  --clr-on-error-fixed-variant: oklch(from var(--clr-error-base) 0.3 c h);
   --clr-surface: light-dark(
-    oklch(0.9842 0.0101 311.18),
-    oklch(0.1891 0.0101 285.4)
+    oklch(from var(--clr-primary-base) 0.98 0.024 h),
+    oklch(from var(--clr-primary-base) 0.06 0.024 h)
   );
   --clr-on-surface: light-dark(
-    oklch(0.2258 0.0154 285.1),
-    oklch(0.9153 0.0151 298.55)
+    oklch(from var(--clr-primary-base) 0.1 0.024 h),
+    oklch(from var(--clr-primary-base) 0.9 0.024 h)
   );
   --clr-on-surface-variant: light-dark(
-    oklch(0.3985 0.015 290.8),
-    oklch(0.8291 0.0155 298.51)
-  );
-  --clr-surface-bright: light-dark(
-    oklch(0.9842 0.0101 311.18),
-    oklch(0.3444 0.0121 292.31)
+    oklch(from var(--clr-primary-base) 0.3 0.024 h),
+    oklch(from var(--clr-primary-base) 0.8 0.024 h)
   );
   --clr-surface-dim: light-dark(
-    oklch(0.8877 0.0116 308.31),
-    oklch(0.1891 0.0101 285.4)
+    oklch(from var(--clr-primary-base) 0.87 0.024 h),
+    oklch(from var(--clr-primary-base) 0.06 0.024 h)
   );
   --clr-surface-container-lowest: light-dark(
-    oklch(1 0 0),
-    oklch(0.1662 0.0104 285.21)
+    oklch(from var(--clr-primary-base) 1 0.024 h),
+    oklch(from var(--clr-primary-base) 0.03 0.024 h)
   );
   --clr-surface-container-low: light-dark(
-    oklch(0.9665 0.0114 308.33),
-    oklch(0.2259 0.0116 293.09)
+    oklch(from var(--clr-primary-base) 0.96 0.024 h),
+    oklch(from var(--clr-primary-base) 0.12 0.024 h)
   );
   --clr-surface-container: light-dark(
-    oklch(0.9485 0.0114 308.33),
-    oklch(0.2429 0.0114 293.18)
+    oklch(from var(--clr-primary-base) 0.94 0.024 h),
+    oklch(from var(--clr-primary-base) 0.18 0.024 h)
   );
   --clr-surface-container-high: light-dark(
-    oklch(0.9334 0.0115 308.32),
-    oklch(0.2844 0.0109 293.34)
+    oklch(from var(--clr-primary-base) 0.92 0.024 h),
+    oklch(from var(--clr-primary-base) 0.25 0.024 h)
   );
   --clr-surface-container-highest: light-dark(
-    oklch(0.9152 0.0115 308.32),
-    oklch(0.3284 0.0105 293.46)
+    oklch(from var(--clr-primary-base) 0.9 0.024 h),
+    oklch(from var(--clr-primary-base) 0.32 0.024 h)
   );
   --clr-inverse-surface: light-dark(
-    oklch(0.3126 0.0107 293.42),
-    oklch(0.9152 0.0115 308.32)
+    oklch(from var(--clr-primary-base) 0.25 0.024 h),
+    oklch(from var(--clr-primary-base) 0.95 0.024 h)
   );
   --clr-inverse-on-surface: light-dark(
-    oklch(0.9575 0.0114 308.33),
-    oklch(0.3126 0.0107 293.42)
+    oklch(from var(--clr-primary-base) 0.95 0.024 h),
+    oklch(from var(--clr-primary-base) 0.25 0.024 h)
   );
   --clr-outline: light-dark(
-    oklch(0.5699 0.0109 299.08),
-    oklch(0.6551 0.0122 303.01)
+    oklch(from var(--clr-primary-base) 0.5 0.024 h),
+    oklch(from var(--clr-primary-base) 0.6 0.024 h)
   );
   --clr-outline-variant: light-dark(
-    oklch(0.8282 0.0115 303.08),
-    oklch(0.3973 0.01 293.59)
+    oklch(from var(--clr-primary-base) 0.8 0.024 h),
+    oklch(from var(--clr-primary-base) 0.3 0.024 h)
   );
   --clr-scrim: oklch(0 0 0 / 0.32);
   --clr-shadow: light-dark();
@@ -134,6 +153,7 @@
 
 @font-face {
   font-family: "Rubik";
+  font-optical-sizing: auto;
   font-display: swap;
   font-weight: 100 900;
   font-style: normal;
@@ -141,13 +161,24 @@
 }
 @font-face {
   font-family: "Rubik";
+  font-optical-sizing: auto;
   font-display: swap;
   font-style: italic;
   font-weight: 100 900;
   src: url("/styles/fonts/rubik-italic.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Google Sans Flex";
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 100 900;
+  font-style: normal;
+  src: url("/styles/fonts/google-sans-flex.woff2") format("woff2");
+}
 :root {
   --font-family: 'Rubik', sans-serif;
+  --font-family-alt: 'Google Sans Flex', sans-serif;
+  --brand-text: 500 1.833rem/2.333rem var(--font-family-alt);
   --title-lg: 500 clamp(1.875rem, 1.7vw + 1.47rem, 3rem)/1.1 var(--font-family);
   --title-md: 500 clamp(1.5rem, 0.75vw + 1.32rem, 2rem)/1.15 var(--font-family);
   --title-sm: 500 clamp(1.25rem, 0.4vw + 1.15rem, 1.5rem)/1.2 var(--font-family);
@@ -248,6 +279,7 @@ select {
 button,
 [role=button] {
   cursor: pointer;
+  border: none;
 }
 
 button:disabled,
@@ -277,10 +309,112 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
+}
+
 html,
 body {
   scroll-behavior: smooth;
   background-color: var(--clr-surface);
+  container-type: inline-size;
+}
+
+.site-header {
+  height: 4rem;
+  padding-inline: 2rem;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr repeat(2, auto);
+  grid-template-areas: "logo . theme login";
+  gap: 0.5rem;
+  align-items: center;
+  background-color: transparent;
+  color: var(--clr-on-surface);
+  transition: background-color 300ms cubic-bezier(0.36, 0, 0.64, 1);
+}
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: currentColor;
+  grid-area: logo;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+  font: var(--brand-text);
+}
+.site-header__theme-toggle {
+  grid-area: theme;
+}
+.site-header__login {
+  grid-area: login;
+}
+@supports (animation-timeline: scroll()) {
+  .site-header {
+    animation: sticky-header 300ms cubic-bezier(0.36, 0, 0.64, 1) both;
+    animation-timeline: scroll();
+    animation-range: 0 4rem;
+  }
+}
+.site-header--scrolled {
+  background-color: var(--clr-surface-container);
+  transition: background-color 300ms cubic-bezier(0.36, 0, 0.64, 1);
+}
+@container (inline-size > 64rem) {
+  .site-header__logo {
+    text-indent: 0;
+  }
+}
+
+@keyframes sticky-header {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--clr-surface-container);
+  }
+}
+.btn:empty {
+  display: none;
+}
+.btn--icon {
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color 300ms cubic-bezier(0.36, 0, 0.64, 1);
+}
+.btn--icon:has(svg) {
+  fill: var(--clr-on-surface-variant);
+}
+@media (hover: hover) {
+  .btn--icon:hover {
+    background-color: oklch(from var(--clr-on-surface-variant) l c h/0.08);
+    transition: background-color 300ms cubic-bezier(0.36, 0, 0.64, 1);
+  }
+}
+.btn--tonal {
+  background-color: var(--clr-secondary-container);
+}
+.btn--tonal:has(svg) {
+  fill: var(--clr-on-secondary-container);
+  transition: background-image 300ms cubic-bezier(0.36, 0, 0.64, 1);
+}
+.btn--tonal:hover {
+  background-color: var(--clr-secondary-container);
+  background-image: linear-gradient(0deg, oklch(from var(--clr-on-secondary-container) l c h/0.08), oklch(from var(--clr-on-secondary-container) l c h/0.08));
+  transition: background-image 300ms cubic-bezier(0.36, 0, 0.64, 1);
+}
+
+#features, #pricing, #contact {
+  scroll-margin-block-start: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
